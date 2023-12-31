@@ -10,7 +10,13 @@ This template should help get you started developing with Vue 3 in Vite.
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+## Installation
+
+```sh
+npm create vue@latest
+```
+
+### Project Setup
 
 ```sh
 npm install
@@ -26,4 +32,55 @@ npm run dev
 
 ```sh
 npm run build
+```
+
+## Firebase Configuration
+
+```sh
+npm install firebase
+```
+
+### CLI
+
+```sh
+npm install -g firebase-tools
+```
+
+### Login
+
+```sh
+firebase login
+firebase init
+```
+
+### Emulator
+
+```sh
+firebase init emulators
+firebase emulators:start
+```
+
+## Firebase Hosting
+### firebase.json
+
+```sh
+{
+
+  "hosting": {
+
+    "site": "vuejs-firebase-web",
+
+    "public": "public",
+
+    ...
+
+  }
+
+}
+```
+
+### Hosting
+
+```sh
+firebase deploy --only hosting:vuejs-firebase-web
 ```
